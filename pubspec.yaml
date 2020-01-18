@@ -1,8 +1,7 @@
 name: animated_dialog_box
 description: A new Flutter package project.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/Shubham-Narkhede/animated_dialog_box.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

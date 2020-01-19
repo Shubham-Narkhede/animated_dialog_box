@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'CustomAlertBox Package'),
+      home: MyHomePage(title: 'Animated Dialog Box'),
     );
   }
 }
@@ -30,22 +30,23 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text(
-            'to show custom alert box please click floating action button.'),
+        child: Text('This is my first package.'),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton.extended(
+        label: Text("Show Dailog"),
         onPressed: () async {
           await animated_dialog_box.showCustomAlertBox(
               context: context,
-              willDisplayWidget: Container(
+              yourWidget: Container(
                 child: Text('My custom alert box, used from example!!'),
               ));
         },
         tooltip: 'Show Custom Alert Box',
-        child: Icon(Icons.message),
       ),
     );
   }

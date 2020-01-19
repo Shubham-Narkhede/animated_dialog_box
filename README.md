@@ -1,7 +1,7 @@
 # animated_dialog_box
 
 A pure dart package for showing animated alert box.
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/Shubham-Narkhede/animated_dialog_box/blob/master/animated_box_example/animated_alert_box.gif)
 ## Getting Started
 
 This project is a starting point for a Dart
